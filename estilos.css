@@ -1,0 +1,67 @@
+body{
+	background-image: url(imagens/teste.jpeg);
+	background-repeat: repeat-y;
+	background-size: 100%;
+	width: 100%;
+	}
+
+#container{
+	margin: 0 auto;
+	width: 1000px;
+	font-family: "comic sans MS";
+}
+
+#container_menu{
+	margin: 0 auto;
+	width: 1200px;
+	font-family: "comic sans MS";
+}
+
+#cards{
+	background: #CEF6F5;
+	border: 1px solid black;
+	margin: 10px;
+	width: 300px;
+	height: 280px;
+}
+
+
+/*Matéria Histtoria*/
+	/*Meio Ambiente*/
+		#meio_ambiente{
+			width: 1000px;
+			margin: 0 auto;
+			text-align: justify;
+		}
+
+		#btn_quiz{
+			margin-left: 420px;
+			margin-bottom: 30px;
+		}
+
+		#btn_quiz2{
+			margin-left: 10px;
+			margin-bottom: 30px;
+		}
+
+		#img1{
+			margin-left: 330px;
+			border-top: 15px;
+			border-bottom: 15px;
+			padding: 5px;
+		}
+
+		#img_arvore{
+			border: 3px solid black;
+			border-radius: 5px;
+		}
+
+
+/*Perguntas*/
+#edit{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding: 10px;
+	font-family: "comic sans MS"
+ }
