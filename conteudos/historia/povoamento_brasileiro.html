@@ -1,0 +1,55 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+<head>
+		<title>Enciclopedia Viva</title>
+		<!--Inicio Configurações-->
+		<link rel="icon" href="imagens/logo.png">
+		<meta charset="utf-8"> <!--PACOTE DE CARACTERES-->
+		<link rel="stylesheet" type="text/css" href="../../estilos.css"><!--CSS-->
+		<script src="povoamento_brasileiro_funcoes.js"></script><!--JAVA SCRIPT-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><!--BOOTSTRAP-->
+		<script src="https://code.responsivevoice.org/responsivevoice.js"></script><!--RESPOSIVE VOICE-->
+		<!--Fim Configurações-->
+</head>
+<body>
+	<div id="container_menu"><!--INICIO CONTAINER-->
+
+<!--INICIO AUDIO APRESENTAÇÃO-->
+	<audio id="apresentacao_povoamento" src="anexos_historia/conteudo2.mp3">Audio</audio>
+	<script>
+			
+			document.getElementById('apresentacao_meioambiente').addEventListener('keydown', meioambienteKD )
+	</script>
+<!--FIM AUDIO APRESENTAÇÃO-->
+
+<!--INICIO DO TEXTO DIDATICO-->
+	<h1 class="display-1;" align="center">Povoamento Brasileiro</h1>
+	<hr>
+	<div id="meio_ambiente" class="lead">
+		<p>&nbsp; Quando os portugueses se encontravam no Brasil, eles tinham como principal objetivo explorar os recursos naturais existentes no interior do país. Com base nessa afirmação, fica claro o desprovimento de interesse em povoar o novo território. Isso favoreceu o não surgimento de centros urbanos (cidades) de relevância, com exceção de algumas vilas e cidades de pequeno porte que emergiram na costa nordeste do Brasil, além de toda produção agropecuária que se formou ao redor.</p>
+
+		<p>&nbsp;No século XVI, o principal produto brasileiro era o açúcar, fato que favorecia a ocupação somente da faixa litorânea do país, uma vez que o escoamento da produção se dava por meio do oceano Atlântico. Com o cultivo da cana-de-açúcar, fez-se necessária a expansão das fronteiras agrícolas. Diante do fato, as policulturas foram cultivadas em áreas mais interioranas para dar lugar à produção monocultora.
+		Cem anos depois, entre os séculos XVII e XIII, houve o período denominado de aurífero, no qual as caravanas se voltaram para o interior do Brasil em busca de pedras preciosas, como ouro e diamante. Nesse momento, foram desbravados territórios que correspondem hoje aos estados de Goiás, Mato Grosso e Minas Gerais. As cidades que surgiam por causa da extração mineral promoviam certa aglomeração, no entanto, logo após os minérios se esgotarem, essas cidades ficavam praticamente desertas.
+		</p>
+
+				<div id="img1">
+					<img id="img_arvore" src="anexos_historia/imagem2.jpg" style="width: 300px; height: 250px">
+					<p>Colonia de povoamento</p>
+				</div>
+
+		<p>&nbsp;Um século depois, após iniciativas do governo para ocupar a área e impedir que ela fosse invadida por um dos países vizinhos, a região Sul foi povoada por imigrantes. No século XIX, o produto de grande expressão para o país deixou de ser a cana-de-açúcar e passou a ser o café, fato que proporcionou o povoamento do estado de São Paulo e o norte do Paraná. Com o declínio do café, o capital gerado pelo produto migrou para a produção industrial, especialmente na região Sudeste. A partir daí, houve um elevado desenvolvimento das ferrovias. Mais tarde, com a instalação da indústria automobilística, ocorreu a construção de rodovias, favorecendo ainda mais o povoamento do país.</p>
+	</div>
+<!--FIM DO TEXTO DIDATICO-->
+
+
+
+		<button id="btn_quiz" style="font-family: 'comic sans MS'"  class="btn btn-outline-dark btn-lg" type="button"><a href="perguntas/pergunta1.html" style="text-decoration: none; color: black;">Iniciar o Quiz</a></button>
+
+		<button id="btn_quiz2" style="font-family: 'comic sans MS'"  class="btn btn-outline-dark btn-lg" type="button"><a href="menu_historia.html" style="text-decoration: none; color: black;">Voltar ao Menu</a></button>
+
+
+
+
+	</div><!--FIM CONTAINER-->
+</body>
+</html>

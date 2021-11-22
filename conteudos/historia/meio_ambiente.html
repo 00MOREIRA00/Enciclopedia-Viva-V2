@@ -1,0 +1,59 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+<head>
+		<title>Enciclopedia Viva</title>
+		<!--Inicio Configurações-->
+		<link rel="icon" href="imagens/logo.png">
+		<meta charset="utf-8"> <!--PACOTE DE CARACTERES-->
+		<link rel="stylesheet" type="text/css" href="../../estilos.css"><!--CSS-->
+		<script src="meio_ambiente_funcoes.js"></script><!--JAVA SCRIPT-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><!--BOOTSTRAP-->
+		<script src="https://code.responsivevoice.org/responsivevoice.js"></script><!--RESPOSIVE VOICE-->
+		<!--Fim Configurações-->
+</head>
+<body>
+	<div id="container_menu"><!--INICIO CONTAINER-->
+
+<!--INICIO AUDIO APRESENTAÇÃO-->
+	<audio id="apresentacao_meioambiente" src="anexos_historia/conteudo.mp3">Audio</audio>
+	<script>
+			
+			document.getElementById('apresentacao_meioambiente').addEventListener('keydown', meioambienteKD )
+	</script>
+<!--FIM AUDIO APRESENTAÇÃO-->
+
+<!--INICIO DO TEXTO DIDATICO-->
+	<h1 class="display-1;" align="center">Dia do Meio Ambiente</h1>
+	<hr>
+	<div id="meio_ambiente" class="lead">
+		<p>&nbsp; O Dia Mundial do Meio Ambiente, comemorado no dia 5 de junho, foi instituído pela Organização das Nações Unidas (ONU), e tem como objetivo principal chamar a atenção de todas as esferas da população para os problemas ambientais e para a importância da preservação dos recursos naturais, que até então eram considerados, por muitos, inesgotáveis.</p>
+
+		<p>&nbsp;Em 1972, durante a Conferência das Nações Unidas sobre o Meio Ambiente Humano, em Estocolmo, a Organização das Nações Unidas (ONU) instituiu o Dia Mundial do Meio Ambiente, que passou a ser comemorado todo dia 05 de junho. Essa data, que foi escolhida para coincidir com a data de realização dessa conferência, tem como objetivo principal chamar a atenção de todas as esferas da população para os problemas ambientais e para a importância da preservação dos recursos naturais, que até então eram considerados, por muitos, inesgotáveis.
+		Nessa Conferência, que ficou conhecida como Conferência de Estocolmo, iniciou-se uma mudança no modo de ver e tratar as questões ambientais ao redor do mundo, além de serem estabelecidos princípios para orientar a política ambiental em todo o planeta. Apesar do grande avanço que a Conferência representou, não podemos afirmar, no entanto, que todos os problemas foram resolvidos a partir daí.
+		</p>
+
+				<div id="img1">
+					<img id="img_arvore" src="anexos_historia/imagem1.png">
+					<p>Um dos nossos bens mais preciosos </p>
+				</div>
+
+		<p>&nbsp;Dentre os principais problemas que afetam o meio ambiente, podemos destacar o descarte inadequado de lixo, a falta de coleta seletiva e de projetos de reciclagem, consumo exagerado de recursos naturais, desmatamento, inserção de espécies exóticas, uso de combustíveis fósseis, desperdício de água e esgotamento do solo. Esses problemas e outros poderiam ser evitados se os governantes e a população se conscientizassem da importância do uso correto e moderado dos nossos recursos naturais.
+		Em razão da importância da conscientização e da dimensão do impacto gerado pelo homem, o Dia Mundial do Meio Ambiente é uma data que merece bastante destaque no calendário mundial. Entretanto, não basta apenas plantar uma árvore ou separar o lixo nesse dia, é necessário que sejam feitas campanhas de grande impacto que mostrem a necessidade de mudanças imediatas nos nossos hábitos de vida diários.
+		Apesar de muitos acreditarem que a mudança deve acontecer em escala mundial e que apenas uma pessoa não consegue mudar o mundo, é fundamental que cada um faça a sua parte e que toda a sociedade reivindique o cumprimento das leis ambientais. Todos devemos assumir uma postura de responsabilidade ambiental, pois só assim conseguiremos mudar o quadro atual.
+		<i>“A proteção e o melhoramento do meio ambiente humano é uma questão fundamental que afeta o bem-estar dos povos e o desenvolvimento econômico do mundo inteiro, um desejo urgente dos povos de todo o mundo e um dever de todos os governos.”</i>
+		</p>
+	</div>
+<!--FIM DO TEXTO DIDATICO-->
+
+
+
+		<button id="btn_quiz" style="font-family: 'comic sans MS'"  class="btn btn-outline-dark btn-lg" type="button"><a href="perguntas/pergunta1.html" style="text-decoration: none; color: black;">Iniciar o Quiz</a></button>
+
+		<button id="btn_quiz2" style="font-family: 'comic sans MS'"  class="btn btn-outline-dark btn-lg" type="button"><a href="menu_historia.html" style="text-decoration: none; color: black;">Voltar ao Menu</a></button>
+
+
+
+
+	</div><!--FIM CONTAINER-->
+</body>
+</html>

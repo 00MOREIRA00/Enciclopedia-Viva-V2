@@ -1,0 +1,80 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+<head>
+		<title>Enciclopedia Viva</title>
+		<!--Inicio Configurações-->
+		<link rel="icon" href="imagens/logo.png">
+		<meta charset="utf-8"> <!--PACOTE DE CARACTERES-->
+		<link rel="stylesheet" type="text/css" href="../../../estilos.css"><!--CSS-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><!--BOOTSTRAP-->
+		<script src="https://code.responsivevoice.org/responsivevoice.js"></script><!--RESPOSIVE VOICE-->
+		<!--Fim Configurações-->
+</head>
+<body style="background: #ADD8E6;">
+	
+<div id="edit" align="center">
+
+
+	<h1>PERGUNTA 3</h1>
+
+	<p>Como também é conhecido o período Paleolítico?</p><br>
+	<input id="certo" type="radio" name="resultado" value="Acucar" onclick="correcao_certo()">Idade da Pedra Lascada
+	<input id="errado" type="radio" name="resultado" value="Cafe"  onclick="correcao_errado()">Idade da Pedra<br>
+
+	<audio id="pergunta5" src="../anexos_historia/pergunta11.mp3">Audio</audio>
+
+	<a class="btn btn-outline-dark" href="../pre_historia.html" style="margin-top: 50px;">Voltar ao conteúdo</a>
+
+</div>
+
+
+
+
+
+	<script>
+		function correcao_errado(){
+		alert('Infelizmente você errou, tente novamente')
+		 window.location.href = '';
+}
+
+		function correcao_certo(){
+		alert('Parabéns você acertou')
+		 window.location.href = 'pergunta12.html';
+		}
+
+
+
+
+
+		function verificaTecla(){
+	 document.addEventListener('keydown', teclaKD);
+}
+
+
+//Função com Configurações de Tecla 1: MENU
+function verificaTecla2(){
+	 document.addEventListener('keydown', teclapergunta);
+}
+
+function teclapergunta(){
+	//seta cima = 38; seta baixo = 40
+
+	var tecla2 = window.event.keyCode;
+	if(tecla2 == 37){
+		responsiveVoice.speak('Parabéns, você acertou clique enter pra ouvir a proxima pergunta', "Brazilian Portuguese Female");
+		 window.location.href = 'pergunta12.html';
+	}else if(tecla2 == 39) {
+		responsiveVoice.speak('Infelizmente você errou, tente novamente', "Brazilian Portuguese Female");
+	}else if(tecla2 == 13){
+		const audio = document.querySelector('audio')
+			audio.play()	
+	}else if(tecla2 == 17){
+		responsiveVoice.speak('Você voltou ao conteudo, para saber mais das configurações clique enter', "Brazilian Portuguese Female");
+		window.location.href = '../pre_historia.html';
+	}
+}
+
+verificaTecla2();
+	</script>
+</body>
+</html>
